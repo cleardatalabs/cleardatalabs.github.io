@@ -1,15 +1,32 @@
 ---
 layout: default
 title: "ClearDataLabs"
-description: "AI, neural networks, data analysis - explained from scratch."
+description: "Complex AI concepts, explained clear and easy way."
 ---
 
 <div class="home-intro">
-  <p>Neural networks without the framework. JavaScript, TypeScript, and math — running live in your browser. Everything here is built from scratch and explained step by step.</p>
+  <p>Complex AI concepts, explained clear and easy way. Interactive experiments, in-depth articles, and hands-on projects — explore how AI actually works, from the math up.</p>
+</div>
+
+<div class="recent-articles">
+  <h2>Recent Articles</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+    <li class="post-item">
+      <a class="post-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="post-item-meta">
+        <time class="post-item-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        {% if post.series %}<span class="post-item-series">{{ post.series }}</span>{% endif %}
+      </div>
+      {% if post.description %}<p class="post-item-desc">{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  <p><a href="/articles/">View all articles &rarr;</a></p>
 </div>
 
 <div class="featured-projects">
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
 
   <div class="project-item">
     <a href="https://cleardatalabs.github.io/hwrjs/">
@@ -36,21 +53,4 @@ description: "AI, neural networks, data analysis - explained from scratch."
       [<a href="/articles/2026/04/02/knowledge-extract-chapter-1/">Read Chapter 1</a>]
     </div>
   </div>
-</div>
-
-<div class="recent-articles">
-  <h2>Recent Articles</h2>
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-    <li class="post-item">
-      <a class="post-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <div class="post-item-meta">
-        <time class="post-item-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        {% if post.series %}<span class="post-item-series">{{ post.series }}</span>{% endif %}
-      </div>
-      {% if post.description %}<p class="post-item-desc">{{ post.description }}</p>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-  <p><a href="/articles/">View all articles &rarr;</a></p>
 </div>
