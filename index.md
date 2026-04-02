@@ -22,7 +22,7 @@ description: "Complex AI concepts, explained clear and easy way."
     </li>
     {% endfor %}
   </ul>
-  <p><a href="/articles/">View all articles &rarr;</a></p>
+  <p><a href="/articles/">More articles</a></p>
 </div>
 
 <div class="featured-projects">
