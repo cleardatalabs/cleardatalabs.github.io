@@ -22,8 +22,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+include:
+  - CNAME
+
 exclude:
-  - plan.md
   - Gemfile
   - Gemfile.lock
   - .gitignore
