@@ -1,0 +1,30 @@
+title: "ClearDataLabs"
+description: "AI, neural networks, and browser demos — explained from scratch."
+url: "https://cleardatalabs.com"
+baseurl: ""
+
+author:
+  name: "Kostiantyn Chumychkin"
+  github: "kchumichkin"
+  linkedin: "kchumichkin"
+
+twitter_username: "cleardatalabs"
+github_username: "cleardatalabs"
+logo: /assets/img/logo.png
+google_analytics: "UA-113775788-1"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /articles/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - plan.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - vendor/
