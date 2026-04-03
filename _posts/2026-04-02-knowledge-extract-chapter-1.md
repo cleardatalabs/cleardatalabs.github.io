@@ -17,7 +17,7 @@ The causal index is a method for understanding what a neural network has learned
 
 ## Background
 
-This project was inspired by an [online demo](http://myselph.de/neuralNet.html) by Hubert Eichner — a neural network for handwritten digit recognition running entirely in the browser. The network was trained on the [MNIST dataset](https://en.wikipedia.org/wiki/MNIST_database) in MATLAB, then exported to JavaScript. Combined with a drawing tool, it lets users write digits on screen and get instant predictions.
+This project was inspired by an [online demo](https://web.archive.org/web/20201112004840/http://myselph.de/neuralNet.html) by Hubert Eichner — a neural network for handwritten digit recognition running entirely in the browser. The network was trained on the [MNIST dataset](https://en.wikipedia.org/wiki/MNIST_database) in MATLAB, then exported to JavaScript. Combined with a drawing tool, it lets users write digits on screen and get instant predictions.
 
 The model achieves a recognition error of just 1.92% (9,808 out of 10,000 digits classified correctly), which is a solid result even among other MNIST benchmarks. Great work and a beautiful presentation — but can we go further?
 
