@@ -1,0 +1,38 @@
+# ClearDataLabs
+
+> Interactive AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live in your browser with no libraries.
+
+ClearDataLabs is a non-commercial, open-source educational project by Kostiantyn Chumychkin. It builds AI systems from first principles in TypeScript/JavaScript with no ML frameworks, running entirely in the browser.
+
+## Key Pages
+
+- [Homepage](https://cleardatalabs.com/): Overview of articles and interactive demos
+- [About](https://cleardatalabs.com/about/): Mission, philosophy, and author background
+- [Articles](https://cleardatalabs.com/articles/): All technical articles
+- [Projects](https://cleardatalabs.com/projects/): Interactive browser-based AI demos
+
+## Article Series: Handwriting Recognition in the Browser (hwrjs)
+
+A complete neural network for handwriting recognition built from scratch in TypeScript — no TensorFlow, no Python, no server.
+
+- [Handwriting Recognition in the Browser, from Scratch](https://cleardatalabs.com/articles/hwrjs-handwriting-recognition-in-the-browser/): Series overview and live demo
+- [Seeing in Cells](https://cleardatalabs.com/articles/seeing-in-cells/): How raw pen strokes become a 12x12 binary grid for neural network input
+- [144 Numbers In, One Letter Out](https://cleardatalabs.com/articles/144-numbers-in-one-letter-out/): Building a 3-layer feedforward neural network from scratch in TypeScript
+- [Backprop in the Browser](https://cleardatalabs.com/articles/backprop-in-the-browser/): Implementing gradient descent and backpropagation in JavaScript
+
+## Article Series: Knowledge Extraction from Neural Networks
+
+Methods to visualize and understand what a trained neural network has learned.
+
+- [Extracting Knowledge Using Causal Index](https://cleardatalabs.com/articles/knowledge-extract-chapter-1/): Computing per-pixel causal index heat maps in pure JavaScript
+- [Iterative Input Adaptation](https://cleardatalabs.com/articles/knowledge-extract-chapter-2/): Optimizing inputs to make the network "dream" — a lens on learned representations
+
+## Live Demos
+
+- [hwrjs Demo](https://cleardatalabs.github.io/hwrjs/): Draw a letter and watch the neural network classify it in real time
+- [Knowledge Extraction Demo](https://cleardatalabs.github.io/knowledge-extract-ffnn-mnist/): Visualize what a neural network trained on MNIST has learned
+
+## Source Code
+
+- [GitHub: hwrjs](https://github.com/cleardatalabs/hwrjs)
+- [GitHub: knowledge-extract-ffnn-mnist](https://github.com/cleardatalabs/knowledge-extract-ffnn-mnist)
