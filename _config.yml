@@ -7,15 +7,35 @@ author:
   name: "Kostiantyn Chumychkin"
   github: "kchumichkin"
   linkedin: "kchumichkin"
+  url: "https://cleardatalabs.com/about/"
 
-twitter_username: "cleardatalabs"
+twitter:
+  username: "cleardatalabs"
+  card: "summary_large_image"
 github_username: "cleardatalabs"
 logo: /assets/img/logo.png
-google_analytics: "UA-113775788-1"
+
+social:
+  name: "Kostiantyn Chumychkin"
+  links:
+    - "https://github.com/kchumichkin"
+    - "https://linkedin.com/in/kchumichkin"
+    - "https://twitter.com/cleardatalabs"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/ai.gif
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      image: /assets/img/ai.gif
 
 markdown: kramdown
 highlighter: rouge
-permalink: /articles/:year/:month/:day/:title/
+permalink: /articles/:title/
 
 plugins:
   - jekyll-feed

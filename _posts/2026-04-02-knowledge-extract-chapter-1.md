@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Extracting Knowledge from a Neural Network Using Causal Index"
+title: "What Does a Neural Network Learn? Visualizing MNIST with Causal Index"
 date: 2026-04-02
-description: "What has a network trained on MNIST actually learned? We compute a causal index per pixel and visualize it as a heat map — in pure JavaScript."
+description: "What has a neural network trained on MNIST actually learned? We compute a causal index per pixel and visualize the result as a heat map — implemented in pure JavaScript."
 image: /assets/img/mnist3.jpg
 series: knowledge-extract
 series_part: 1
@@ -12,6 +12,8 @@ demo_url: https://cleardatalabs.github.io/knowledge-extract-ffnn-mnist/
 *This is Chapter 1 of a two-part series on knowledge extraction from neural networks. [Live demo](https://cleardatalabs.github.io/knowledge-extract-ffnn-mnist/) · [Source on GitHub](https://github.com/cleardatalabs/knowledge-extract-ffnn-mnist)*
 
 ---
+
+The causal index is a method for understanding what a neural network has learned by measuring how strongly each input pixel influences each output class. For an MNIST digit classifier, this produces heat maps that visually reveal which pixel regions the network relies on for each digit — a form of neural network interpretability implemented here in pure JavaScript, running in the browser.
 
 ## Background
 
@@ -87,5 +89,5 @@ That's exactly what we explore in Chapter 2.
 
 <div class="post-nav">
   <span></span>
-  <a href="/articles/2026/04/02/knowledge-extract-chapter-2/">Chapter 2: Iterative Input Adaptation &rarr;</a>
+  <a href="/articles/knowledge-extract-chapter-2/">Chapter 2: Iterative Input Adaptation &rarr;</a>
 </div>

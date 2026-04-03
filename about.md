@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 permalink: /about/
-description: "ClearDataLabs is a non-commercial, open-source project exploring AI concepts through interactive experiments, articles, and hands-on learning."
+description: "About ClearDataLabs — an open-source project explaining neural networks and AI through interactive browser demos built from scratch in TypeScript, by Kostiantyn Chumychkin."
 ---
 
 ClearDataLabs is a non-commercial, open-source project dedicated to making AI concepts clear and accessible. It combines interactive experiments, in-depth articles, and hands-on exploration to help anyone understand the ideas behind modern AI — from foundational math to advanced architectures.

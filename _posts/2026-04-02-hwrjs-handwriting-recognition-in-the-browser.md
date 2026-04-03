@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Handwriting Recognition in the Browser, from Scratch"
+title: "Handwriting Recognition in the Browser — Neural Network in TypeScript from Scratch"
 date: 2026-04-02
-description: "A neural network that runs entirely in your browser, written in TypeScript with no ML libraries. Here's how it works and how to build it yourself."
+description: "A handwriting recognition neural network running entirely in the browser, built in TypeScript with no ML libraries. Train it on your own letters and watch it classify in real time."
 image: /assets/img/ai.gif
 demo_url: https://cleardatalabs.github.io/hwrjs/
 ---
@@ -37,9 +37,9 @@ The pipeline has three stages:
 
 These three articles cover each stage in detail:
 
-1. [Seeing in Cells: How a Computer Reads Your Handwriting](/articles/2026/04/02/seeing-in-cells/) — how raw pen strokes become a 144-number array
-2. [144 Numbers In, One Letter Out](/articles/2026/04/02/144-numbers-in-one-letter-out/) — the network architecture, neuron math, and forward propagation
-3. [Backprop in the Browser](/articles/2026/04/02/backprop-in-the-browser/) — gradient descent, backpropagation, and the browser UI synchronization trick
+1. [Seeing in Cells: How a Computer Reads Your Handwriting](/articles/seeing-in-cells/) — how raw pen strokes become a 144-number array
+2. [144 Numbers In, One Letter Out](/articles/144-numbers-in-one-letter-out/) — the network architecture, neuron math, and forward propagation
+3. [Backprop in the Browser](/articles/backprop-in-the-browser/) — gradient descent, backpropagation, and the browser UI synchronization trick
 
 Each article is self-contained but they build on each other. Start from Part 1 if you want the full picture.
 

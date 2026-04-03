@@ -1,11 +1,12 @@
 ---
 layout: default
-title: "ClearDataLabs"
-description: "Complex AI concepts, explained clear and easy way."
+title: "Neural Networks Explained — Interactive AI Demos in the Browser | ClearDataLabs"
+description: "Interactive AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live in your browser with no libraries."
+image: /assets/img/ai.gif
 ---
 
 <div class="home-intro">
-  <p>Complex AI concepts, explained clear and easy way. Interactive experiments, in-depth articles, and hands-on projects — explore how AI actually works, from the math up.</p>
+  <p>Complex AI concepts, explained clearly and simply. Interactive experiments, in-depth articles, and hands-on projects — explore how AI actually works, from the math up.</p>
 </div>
 
 <div class="recent-articles">
@@ -37,7 +38,7 @@ description: "Complex AI concepts, explained clear and easy way."
     <div class="project-links">
       [<a href="https://cleardatalabs.github.io/hwrjs/">Live Demo</a>]&nbsp;
       [<a href="https://github.com/cleardatalabs/hwrjs">Source on GitHub</a>]&nbsp;
-      [<a href="/articles/2026/04/02/hwrjs-handwriting-recognition-in-the-browser/">Read the article</a>]
+      [<a href="/articles/hwrjs-handwriting-recognition-in-the-browser/">Read the article</a>]
     </div>
   </div>
 
@@ -50,7 +51,7 @@ description: "Complex AI concepts, explained clear and easy way."
     <div class="project-links">
       [<a href="https://cleardatalabs.github.io/knowledge-extract-ffnn-mnist/">Live Demo</a>]&nbsp;
       [<a href="https://github.com/cleardatalabs/knowledge-extract-ffnn-mnist">Source on GitHub</a>]&nbsp;
-      [<a href="/articles/2026/04/02/knowledge-extract-chapter-1/">Read Chapter 1</a>]
+      [<a href="/articles/knowledge-extract-chapter-1/">Read Chapter 1</a>]
     </div>
   </div>
 </div>

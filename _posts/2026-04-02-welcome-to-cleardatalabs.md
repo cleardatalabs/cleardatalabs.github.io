@@ -2,8 +2,10 @@
 layout: post
 title: "What ClearDataLabs Is About"
 date: 2026-04-02
-description: "An introduction to ClearDataLabs — an open-source, educational project exploring AI concepts through interactive experiments, articles, and hands-on learning."
+description: "ClearDataLabs is an open-source project that explains AI and neural networks through interactive browser demos and in-depth articles — building everything from scratch, no ML libraries."
 ---
+
+ClearDataLabs is an open-source educational project that explains AI concepts by building neural networks from scratch — no TensorFlow, no PyTorch, just TypeScript and a browser. Every article includes working code, and every demo runs client-side with no server.
 
 Most machine learning tutorials hand you a library and a dataset. You call `model.fit()`, watch the accuracy climb, and walk away with a trained model and no particular understanding of what just happened.
 

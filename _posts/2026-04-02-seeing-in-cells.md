@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Seeing in Cells: How a Computer Reads Your Handwriting"
+title: "Seeing in Cells: How Handwriting Becomes Input for a Neural Network"
 date: 2026-04-02
-description: "Before a neural network can classify anything, it needs numbers. Here's how raw pen strokes become a scale-invariant 12×12 binary grid."
+description: "How to preprocess handwriting for a neural network: raw pen strokes become a scale-invariant 12×12 binary grid of 144 numbers — implemented in TypeScript, no libraries."
 series: hwrjs
 series_part: 1
 ---
 
-*This is Part 1 of the [hwrjs series](/articles/2026/04/02/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
+*This is Part 1 of the [hwrjs series](/articles/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
 
 ---
 
-Your browser tab is about to run a neural network that recognizes handwritten characters. No cloud API, no Python runtime, no GPU — just JavaScript, a canvas element, and a few hundred lines of arithmetic.
+Before a neural network can classify handwriting, raw pen strokes must be converted into a fixed-size numerical input. This article implements that preprocessing step from scratch in TypeScript: normalizing variable-length canvas coordinates into a scale-invariant 12×12 binary grid — 144 numbers that encode shape, not position or size.
 
-But before the neural network can do anything useful, it faces a deceptively hard problem: handwriting doesn't fit in a box. You draw an "A" in the top-left corner of the canvas, your friend draws the same letter twice as large and centered. Raw pixel coordinates are useless — they encode position and scale, not shape. The network needs something invariant to where and how big you drew.
+The approach runs entirely in the browser — no cloud API, no Python runtime, no GPU — just JavaScript, a canvas element, and a few hundred lines of arithmetic. But before the neural network can do anything useful, it faces a deceptively hard problem: handwriting doesn't fit in a box. You draw an "A" in the top-left corner of the canvas, your friend draws the same letter twice as large and centered. Raw pixel coordinates are useless — they encode position and scale, not shape. The network needs something invariant to where and how big you drew.
 
 This article is about how we solve that. It covers the journey from raw canvas strokes to the 144-number array that actually feeds the network. If you want to follow along in code, the full project is at [github.com/cleardatalabs/hwrjs](https://github.com/cleardatalabs/hwrjs), with a [live demo here](https://cleardatalabs.github.io/hwrjs/).
 
@@ -164,5 +164,5 @@ The network never sees raw pixel coordinates. It sees a normalized, scale-invari
 
 <div class="post-nav">
   <span></span>
-  <a href="/articles/2026/04/02/144-numbers-in-one-letter-out/">Part 2: 144 Numbers In, One Letter Out &rarr;</a>
+  <a href="/articles/144-numbers-in-one-letter-out/">Part 2: 144 Numbers In, One Letter Out &rarr;</a>
 </div>

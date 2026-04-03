@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Iterative Input Adaptation — Making the Network Dream"
+title: "Making a Neural Network Dream: DeepDream-Style Visualization in JavaScript"
 date: 2026-04-02
-description: "Instead of analyzing what the network learned, we optimize the input until the network sees what we want. A different lens on the same weights."
+description: "A DeepDream-style technique in pure JavaScript: optimize a blank image until a neural network confidently sees a digit. Visualize what an MNIST network has learned."
 image: /assets/img/mnist3.jpg
 series: knowledge-extract
 series_part: 2
@@ -13,9 +13,11 @@ demo_url: https://cleardatalabs.github.io/knowledge-extract-ffnn-mnist/
 
 ---
 
+Iterative input adaptation is a technique for visualizing what a neural network has learned: start with a blank image, randomly perturb individual pixels, and keep changes that increase the network's confidence for a target class. The result is a DeepDream-style image that reveals the network's internal concept of each digit — implemented here in pure JavaScript with no ML libraries.
+
 ## Recap
 
-In [Chapter 1](/articles/2026/04/02/knowledge-extract-chapter-1/), we extracted knowledge from a feed-forward neural network by computing the causal index — a weighted sum of paths from each input pixel to each output class. The result was a set of static heat maps that reveal which pixels matter most for each digit.
+In [Chapter 1](/articles/knowledge-extract-chapter-1/), we extracted knowledge from a feed-forward neural network by computing the causal index — a weighted sum of paths from each input pixel to each output class. The result was a set of static heat maps that reveal which pixels matter most for each digit.
 
 That approach is fast and analytical, but it has a limitation: it only considers the linear contribution of weights, ignoring the non-linear activation functions that make neural networks powerful. Can we do better?
 
@@ -96,6 +98,6 @@ Comparing the two chapters: the causal index method (Chapter 1) gives a quick an
 ---
 
 <div class="post-nav">
-  <a href="/articles/2026/04/02/knowledge-extract-chapter-1/">&larr; Chapter 1: Causal Index</a>
+  <a href="/articles/knowledge-extract-chapter-1/">&larr; Chapter 1: Causal Index</a>
   <span></span>
 </div>

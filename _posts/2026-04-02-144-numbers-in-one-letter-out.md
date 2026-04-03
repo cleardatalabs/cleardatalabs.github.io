@@ -1,23 +1,23 @@
 ---
 layout: post
-title: "144 Numbers In, One Letter Out: Building a Neural Net from Scratch"
+title: "Building a Neural Network from Scratch in TypeScript — No Libraries"
 date: 2026-04-02
-description: "A 3-layer perceptron built in TypeScript with no libraries — neurons, weights, sigmoid activation, and forward pass, all from first principles."
+description: "How to build a feedforward neural network from scratch in TypeScript: neurons, weights, sigmoid activation, and forward pass — a 3-layer perceptron in under 200 lines, no ML libraries."
 series: hwrjs
 series_part: 2
 ---
 
-*This is Part 2 of the [hwrjs series](/articles/2026/04/02/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
+*This is Part 2 of the [hwrjs series](/articles/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
 
 ---
 
-Every neural network tutorial reaches for PyTorch or TensorFlow within the first five minutes. Those libraries are powerful, but they hide the thing that makes neural networks interesting: the math is simple enough to write yourself.
+A feedforward neural network is a series of layers where each neuron computes a weighted sum of its inputs, passes it through an activation function, and outputs a single number. This article builds one from scratch in TypeScript — every neuron, every layer, every weight — in under 200 lines with no ML libraries, running in a browser tab.
 
-This project does exactly that. The entire neural network — every neuron, every layer, every weight update — lives in three TypeScript files under 200 lines combined. No dependencies beyond the standard library. Runs in a browser tab.
+The math behind neural networks is simple enough to write yourself, yet most tutorials reach for PyTorch or TensorFlow within the first five minutes, hiding the mechanics.
 
 This article walks through the architecture. How a single neuron works, how neurons compose into layers, how layers compose into a network, and how the network turns 144 binary inputs into a single predicted handwritten character.
 
-If you haven't read [Part 1](/articles/2026/04/02/seeing-in-cells/), the quick version: user handwriting gets normalized into a 12×12 binary grid — 144 numbers, each 0 or 1, encoding which cells of the grid the pen passed through. That array is the input to everything described here.
+If you haven't read [Part 1](/articles/seeing-in-cells/), the quick version: user handwriting gets normalized into a 12×12 binary grid — 144 numbers, each 0 or 1, encoding which cells of the grid the pen passed through. That array is the input to everything described here.
 
 Source code: [github.com/cleardatalabs/hwrjs](https://github.com/cleardatalabs/hwrjs) · Live demo: [cleardatalabs.github.io/hwrjs](https://cleardatalabs.github.io/hwrjs/)
 
@@ -230,6 +230,6 @@ The network doesn't know anything about letters yet — it starts with random we
 ---
 
 <div class="post-nav">
-  <a href="/articles/2026/04/02/seeing-in-cells/">&larr; Part 1: Seeing in Cells</a>
-  <a href="/articles/2026/04/02/backprop-in-the-browser/">Part 3: Backprop in the Browser &rarr;</a>
+  <a href="/articles/seeing-in-cells/">&larr; Part 1: Seeing in Cells</a>
+  <a href="/articles/backprop-in-the-browser/">Part 3: Backprop in the Browser &rarr;</a>
 </div>

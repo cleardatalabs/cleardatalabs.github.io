@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "Backprop in the Browser: Training a Net Without Leaving JavaScript"
+title: "Backpropagation in the Browser: Training a Neural Network in JavaScript"
 date: 2026-04-02
-description: "Gradient descent, backpropagation, and the UI synchronization problem — all implemented in TypeScript and running live in your browser."
+description: "How backpropagation and gradient descent work, step by step — implemented in TypeScript and running live in the browser. Train a neural network without leaving JavaScript."
 series: hwrjs
 series_part: 3
 ---
 
-*This is Part 3 of the [hwrjs series](/articles/2026/04/02/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
+*This is Part 3 of the [hwrjs series](/articles/hwrjs-handwriting-recognition-in-the-browser/) — a handwriting recognizer built from scratch in TypeScript. [Live demo](https://cleardatalabs.github.io/hwrjs/) · [Source on GitHub](https://github.com/cleardatalabs/hwrjs)*
 
 ---
 
-The network exists. It has 144 input neurons, 144 hidden neurons, and N output neurons. Feed it a drawing of the letter "A" and it returns a vector like `[0.47, 0.51, 0.52]` — essentially random. The weights were initialized with `Math.random() * 0.1`, so of course the output is meaningless.
+Backpropagation is the algorithm that trains a neural network by computing how much each weight contributed to the output error, then adjusting every weight proportionally using gradient descent. This article implements backpropagation from scratch in TypeScript — no ML libraries — and runs the entire training loop live in the browser.
 
-Training changes that. Through thousands of iterations, the network slowly adjusts its weights until the output for "A" looks more like `[0.92, 0.03, 0.05]`. This article explains exactly how that happens: the error signal, backpropagation, the weight update rule, and the engineering trick that keeps the browser responsive while the computation runs.
+The network has 144 input neurons, 144 hidden neurons, and N output neurons. Before training, it returns essentially random output. Through thousands of iterations, backpropagation slowly adjusts the weights until the network correctly classifies handwritten characters. This article explains exactly how that happens: the error signal, the backward pass, the weight update rule, and the engineering trick that keeps the browser responsive while the computation runs.
 
-This is Part 3 of a series. [Part 1](/articles/2026/04/02/seeing-in-cells/) covered input encoding; [Part 2](/articles/2026/04/02/144-numbers-in-one-letter-out/) covered the architecture.
+This is Part 3 of a series. [Part 1](/articles/seeing-in-cells/) covered input encoding; [Part 2](/articles/144-numbers-in-one-letter-out/) covered the architecture.
 
 Source code: [github.com/cleardatalabs/hwrjs](https://github.com/cleardatalabs/hwrjs) · Live demo: [cleardatalabs.github.io/hwrjs](https://cleardatalabs.github.io/hwrjs/)
 
@@ -251,6 +251,6 @@ The result is a handwriting recognizer that runs entirely client-side, built fro
 ---
 
 <div class="post-nav">
-  <a href="/articles/2026/04/02/144-numbers-in-one-letter-out/">&larr; Part 2: 144 Numbers In, One Letter Out</a>
+  <a href="/articles/144-numbers-in-one-letter-out/">&larr; Part 2: 144 Numbers In, One Letter Out</a>
   <span></span>
 </div>
