@@ -1,6 +1,6 @@
 # ClearDataLabs
 
-> Interactive AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live in your browser with no libraries.
+> AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live
 
 ClearDataLabs is a non-commercial, open-source educational project by Kostiantyn Chumychkin. It builds AI systems from first principles in TypeScript/JavaScript with no ML frameworks, running entirely in the browser.
 

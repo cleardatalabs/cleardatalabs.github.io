@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Neural Networks Explained — Interactive AI Demos in the Browser | ClearDataLabs"
-description: "Interactive AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live in your browser with no libraries."
+title: "Neural Networks Explained — Interactive Demos and Articles"
+description: "AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live"
 image: /assets/img/ai.gif
 ---
 
