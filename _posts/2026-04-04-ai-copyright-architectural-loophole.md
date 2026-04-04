@@ -2,7 +2,6 @@
 layout: post
 title: "The Architectural Loophole: AI Copyright & Book Replication"
 date: 2026-04-04
-image: /assets/img/ai-copyright-architectural-loophole/loophole.png
 description: "Discover how AI refuses copyrighted PDFs but recreates entire book structures from memory. Explore the ethics of "Architectural Replication" and synthesized displacement."
 ---
 
