@@ -2,10 +2,8 @@
 layout: post
 title: "The Architectural Loophole: AI Copyright & Book Replication"
 date: 2026-04-04
-description: "Discover how AI refuses copyrighted PDFs but recreates entire book structures from memory. Explore the ethics of "Architectural Replication" and synthesized displacement."
+description: "Discover how AI refuses copyrighted PDFs but recreates entire book structures from memory. Explore the ethics of Architectural Replication and synthesized displacement."
 ---
-
-# The Architectural Loophole: My AI Refused the PDF but Recreated the "Soul" of the Book
 
 AI has a strange relationship with access control. I recently asked for a copyrighted book and hit a 403 Forbidden error—the AI refused to help me 'pirate' a PDF. But moments later, it granted me full read-access anyway, perfectly reconstructing the book’s entire conceptual architecture from its own weights.
 
