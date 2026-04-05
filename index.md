@@ -4,7 +4,7 @@ title: "Neural Networks Explained — Interactive Demos and Articles"
 description: "AI experiments and in-depth articles explaining neural networks, backpropagation, and machine learning from scratch — running live"
 image: /assets/img/ai.gif
 ---
-
+<h1>Neural Networks Explained — Interactive Demos in the Browser</h1>
 <div class="home-intro">
   <p>Complex AI concepts, explained clearly and simply. Interactive experiments, in-depth articles, and hands-on projects — explore how AI actually works, from the math up.</p>
 </div>

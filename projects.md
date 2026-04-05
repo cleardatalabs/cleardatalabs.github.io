@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Projects"
+title: "Interactive AI Browser Demos | ClearDataLabs"
 permalink: /projects/
 description: "Browser-based AI demos — neural networks running in JavaScript, no server required."
 ---

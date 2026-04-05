@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Articles"
+title: "Neural Network Articles | ClearDataLabs"
 permalink: /articles/
 description: "Technical articles about neural networks, browser-based AI, and building ML systems from scratch."
 ---
